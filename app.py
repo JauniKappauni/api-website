@@ -24,4 +24,4 @@ def hello():
     return render_template("index.html", channel_info=channel_info)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=20002, debug=True)
